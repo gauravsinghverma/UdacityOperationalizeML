@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # UdacityOperationalizeML
 
 [![CircleCI](https://circleci.com/gh/gauravsinghverma/UdacityOperationalizeML.svg?style=svg)](https://circleci.com/gh/gauravsinghverma/UdacityOperationalizeML)
@@ -29,8 +28,16 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv and activate it
+   ```
+   python3 -m venv ~/.devops
+   source ~/.devops/bin/activate
+   ```
 * Run `make install` to install the necessary dependencies
-
+  ```
+  pip install --upgrade pip &&\
+                pip3 install -r requirements.txt
+  ```
+  
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
@@ -40,7 +47,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
+  - Create a free account in [Docker](https://hub.docker.com/signup)
+  - After installation check the veriosn of the docker `docker --version`
+  - Once the version is confirmed download [hadolint](https://github.com/hadolint/hadolint/) for linting Dockerfile 
 * Setup and Configure Kubernetes locally
+  - TO download the [minikube](https://minikube.sigs.k8s.io/docs/start/) visit the page and follow the instructions based on your OS
+  - After installation check your minikube version by this command `kubectl version`
 * Create Flask app in Container
+  - Build the code and create an image in Docker `./run_docker.sh`, it will perform steps entioned in the file
+  - Push the docker image to docker.io account `./upload_docker.sh` by following the steps
 * Run via kubectl
->>>>>>> Intial
+  - Start the minikube by `minikube start`
+  - Run the kubernetes file `./run_kubernetes.sh`. This will run create the pod and run the docker image
+  - Verify the app running by executing the command in other terminal `./make_prediction.sh`
+
