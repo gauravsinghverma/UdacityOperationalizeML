@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # UdacityOperationalizeML
 
-https://circleci.com/gh/gauravsinghverma/UdacityOperationalizeML.png?circle-token=:circle-token
+[![CircleCI](https://circleci.com/gh/gauravsinghverma/UdacityOperationalizeML.svg?style=svg)](https://circleci.com/gh/gauravsinghverma/UdacityOperationalizeML)
 
 ## Project Overview
 
