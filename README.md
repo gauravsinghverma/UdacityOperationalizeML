@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # UdacityOperationalizeML
 =======
-https://circleci.com/gh/CircleCI-Public/circleci-cli.svg?style=svg
+https://app.circleci.com/pipelines/github/gauravsinghverma/UdacityOperationalizeML
 
 ## Project Overview
 
