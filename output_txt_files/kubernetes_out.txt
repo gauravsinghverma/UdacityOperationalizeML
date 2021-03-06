@@ -1,1 +1,11 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) gsv@DESKTOP-G1QNCMI:~/local_environment/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "udacityoperationalizeml" already exists
+NAME                      READY   STATUS    RESTARTS   AGE
+udacityoperationalizeml   1/1     Running   0          83m
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
