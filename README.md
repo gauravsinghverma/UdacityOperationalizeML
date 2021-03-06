@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # UdacityOperationalizeML
 =======
-<include a CircleCI status badge, here>
+https://circleci.com/gh/CircleCI-Public/circleci-cli.svg?style=svg
 
 ## Project Overview
 
